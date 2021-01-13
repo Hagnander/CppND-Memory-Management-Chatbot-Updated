@@ -12,7 +12,7 @@
 ChatBot::ChatBot()
 {
     // invalidate data handles
-    _image = nullptr;
+    _image = NULL;
     _chatLogic = nullptr;
     _rootNode = nullptr;
 }
@@ -77,7 +77,7 @@ ChatBot::ChatBot(ChatBot &&source) // 4 : move constructor
     source._currentNode = nullptr;
     source._rootNode = nullptr;
     source._chatLogic = nullptr;
-    source._image = nullptr;
+    source._image = NULL;
 }
 ChatBot& ChatBot::operator=(ChatBot &&source) // 5 : move assignment operator
 {
@@ -94,7 +94,7 @@ ChatBot& ChatBot::operator=(ChatBot &&source) // 5 : move assignment operator
     source._currentNode = nullptr;
     source._rootNode = nullptr;
     source._chatLogic = nullptr;
-    source._image = nullptr;
+    source._image = NULL;
     return *this;
 }
 
