@@ -42,7 +42,6 @@ ChatBot::~ChatBot()
     }
 }
 
-//// STUDENT CODE
 ChatBot::ChatBot(const ChatBot &source) // 2 : copy constructor
 {
     std::cout << "COPYING content of instance " << &source << " to instance " << this << std::endl;
@@ -98,7 +97,6 @@ ChatBot& ChatBot::operator=(ChatBot &&source) // 5 : move assignment operator
     source._image = nullptr;
     return *this;
 }
-//// EOF STUDENT CODE
 
 void ChatBot::ReceiveMessageFromUser(std::string message)
 {
